@@ -1,0 +1,153 @@
+.type-content {
+  margin-bottom: 120px;
+
+  @include small-tablet {
+    margin-bottom: 60px;
+
+    .container {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 123%;
+    letter-spacing: -0.01em;
+    color: #1f1f1f;
+    text-align: center;
+
+    @include small-tablet {
+      font-size: 32px;
+      text-align: left;
+      margin-bottom: 26px;
+      padding: 0 12px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 20px;
+
+    @include small-tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+
+
+  &__item {
+    max-width: 453px;
+    width: 100%;
+    border-radius: 24px;
+    background: var(--light-grey);
+    padding: 48px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include small-tablet {
+      max-width: 500px;
+      padding: 24px 12px;
+    }
+
+    &:last-child {
+      background: var(--accent);
+
+      .type-content__subtitle {
+        color: #fff;
+      }
+
+      .type-content__descr {
+        color: #fff;
+      }
+
+      .type-content__price {
+        color: #fff;
+      }
+
+      .type-content__list-item {
+        color: #fff;
+      }
+
+      .type-content__btn {
+        background: #fff;
+        color: var(--accent);
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 2px;
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 120%;
+    color: #1e1e1e;
+
+    @include small-tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    color: #1e1e1e;
+  }
+
+  &__price {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 64px;
+    color: #1e1e1e;
+
+    @include small-tablet {
+      font-size: 48px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+
+    @include small-tablet {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list-item {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 25px;
+    border-radius: 14px;
+    background: var(--accent);
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+  }
+}

@@ -1,0 +1,274 @@
+.post {
+  margin-top: 70px;
+  margin-bottom: 80px;
+
+  @include small-tablet {
+    margin-top: 40px;
+  }
+
+  &__tegs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__tag {
+    background-color: inherit;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--black);
+    border: 1px solid var(--dark-grey);
+    border-radius: 40px;
+    padding: 10px 28px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    max-width: 910px;
+  }
+
+  &__img {
+    height: 335px;
+    margin-bottom: 34px;
+    border-radius: 24px;
+  }
+
+  &__filter {
+    max-width: 425px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 17px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #242424;
+
+    @include small-tablet {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
+
+
+  }
+
+  &__serch {
+    margin-bottom: 40px;
+  }
+
+  &__cats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+    max-width: 390px;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__cat {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #333;
+  }
+
+  &__last {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    max-width: 390px;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__last-name {
+    margin: 0;
+    margin-bottom: 22px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #333;
+  }
+
+  &__last-time {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--font4);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #a8a8a8;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__time {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font4);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--dark-grey);
+  }
+
+  &__com {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font4);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--dark-grey);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000;
+
+    @include small-tablet {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__input {
+    display: block;
+    max-width: 462px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 18px 25px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(86, 83, 83, 1);
+
+    &::placeholder {
+      color: rgba(86, 83, 83, 0.5);
+    }
+  }
+
+  &__message {
+    order: 1;
+    display: block;
+    max-width: 462px;
+    width: 100%;
+    height: 215px;
+    margin-bottom: 25px;
+    padding: 18px 25px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(86, 83, 83, 1);
+
+    &::placeholder {
+      color: rgba(86, 83, 83, 0.5);
+    }
+  }
+
+  &__btn {
+
+    margin: 0;
+    padding: 25px;
+    border-radius: 14px;
+    background: var(--accent);
+    max-width: 401px;
+    width: 100%;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__inner {
+    margin-bottom: 40px;
+
+    p {
+      margin: 0;
+      margin-bottom: 15px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #635f5f;
+    }
+  }
+
+  .comment-reply-title {
+    margin: 0;
+    margin-bottom: 21px;
+    font-family: var(--font4);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 170%;
+    color: #000;
+  }
+
+  .form-submit {
+    margin: 0;
+    order: 2;
+  }
+
+  .comment-form-cookies-consent {
+    display: none;
+  }
+
+  .comment-notes {
+    display: none;
+  }
+
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logged-in-as {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,66 @@
+.company {
+  padding: 100px 0;
+  background: linear-gradient(104deg, rgba(255, 255, 255, 0) 0%, #7866ff 100%);
+  margin-bottom: 120px;
+
+  @include small-tablet {
+    margin-bottom: 60px;
+    padding: 60px 0 60px 0;
+  }
+
+  &__title {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--black);
+
+    @include small-tablet {
+      font-size: 32px;
+      text-align: left;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #fff;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+
+  &__item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+  }
+
+  &__content>* {
+    border: 1px solid #ebebeb;
+  }
+
+  &__content>*:not(:last-child) {
+    border-right: none;
+  }
+
+  &__content>*:nth-child(n+8) {
+    border-top: none;
+  }
+
+  &__content>*:nth-child(n+2) {
+
+    @include small-tablet {
+      border-top: none;
+    }
+
+  }
+}

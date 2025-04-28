@@ -1,0 +1,68 @@
+.mission {
+  margin-bottom: 120px;
+
+  @include small-tablet {
+    background: var(--light-grey);
+    border-radius: 34px;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    background: var(--light-grey);
+    border-radius: 34px;
+    padding: 60px 0;
+
+    @include small-tablet {
+      padding: 32px 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    color: var(--accent);
+
+    @include small-tablet {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    max-width: 870px;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--black);
+
+    span {
+      @include small-tablet {
+        display: none;
+      }
+    }
+
+    @include small-tablet {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    &--mb {
+      display: none;
+
+      @include small-tablet {
+        display: block;
+        margin: 0;
+      }
+    }
+
+
+  }
+
+}

@@ -1,0 +1,87 @@
+.hero {
+  padding: 180px 0 213px 0;
+  background-image: url(../img/hero-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include small-tablet {
+    padding: 90px 0 280px 0;
+    background-image: url(../img/hero-bg-2.webp);
+  }
+
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background: #fff;
+    width: max-content;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    color: var(--accent);
+
+    @include small-tablet {
+      font-size: 16px;
+      max-width: 270px;
+      background: rgba(255, 255, 255, 0.8);
+      margin-bottom: 42px;
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 150%;
+    color: #fff;
+
+    @include small-tablet {
+      font-size: 26px;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__btn {
+    max-width: 453px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    background: var(--accent);
+    border-radius: 14px;
+    padding: 20px 20px 25px 20px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #fff;
+    transition: all .3s ease-in-out;
+
+    svg {
+      margin-top: 4px;
+    }
+
+    &:hover {
+      background: #fc6e2c;
+      border-radius: 25px;
+    }
+
+    @include small-tablet {
+      max-width: 235px;
+      font-size: 16px;
+      padding: 12px 10px 12px 10px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

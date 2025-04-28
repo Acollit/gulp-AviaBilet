@@ -1,0 +1,88 @@
+.links {
+  padding: 80px 0;
+  margin-bottom: 120px;
+  background: var(--accent);
+
+  @include small-tablet {
+    padding: 72px 0;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    max-width: 870px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 110%;
+    text-align: center;
+    color: #fff;
+
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 33px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #fff;
+    text-align: center;
+
+    @include small-tablet {
+      font-size: 16px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+    @include small-tablet {
+      flex-wrap: wrap;
+      gap: 10px;
+      row-gap: 20px;
+    }
+  }
+
+  &__item {
+    max-width: 290px;
+    width: 100%;
+
+    @include small-tablet {
+      max-width: 170px;
+    }
+  }
+
+  &__link {
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1.50px solid #fff;
+    border-radius: 14px;
+    padding: 22px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+
+    @include small-tablet {
+      font-size: 20px;
+      padding: 14px 10px;
+    }
+  }
+}

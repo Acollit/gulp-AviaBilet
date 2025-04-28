@@ -1,0 +1,26 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Onest", sans-serif;
+  --font3: "Montserrat", sans-serif;
+  --font4: "Roboto", sans-serif;
+  --font5: "Mulish", sans-serif;
+  --font6: "Gilroy", sans-serif;
+  --font7: "Caveat", sans-serif;
+  --font8: "SF Pro Display", sans-serif;
+  --content-width: 1400px;
+  --container-offset: 12px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white: #fefefe;
+  --light-grey: #f2f1ff;
+  --light-grey-2: #e8e4ff;
+  --accent: #7866ff;
+  --accent-400: rgba(120, 102, 255, 0.4);
+  --dark-grey: #565353;
+  --black: #222220;
+}

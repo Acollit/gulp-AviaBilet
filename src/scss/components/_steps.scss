@@ -1,0 +1,158 @@
+.steps {
+  margin-bottom: 120px;
+
+  @include small-tablet {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #242424;
+
+    @include small-tablet {
+      font-size: 32px;
+      text-align: left;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    background: var(--light-grey);
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 345px;
+
+    @include small-tablet {
+      position: relative;
+      width: 100%;
+      height: 207px;
+      padding: 20px 12px;
+      min-width: 171px;
+    }
+
+    svg {
+      min-width: 67px;
+
+      @include small-tablet {
+        position: absolute;
+        right: 12px;
+        bottom: 20px;
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &:nth-child(2n) {
+      background: var(--accent);
+
+      .steps__count {
+        color: #fff;
+      }
+
+      .steps__subtitle {
+        color: #fff;
+      }
+    }
+
+    &:last-child {
+      background-image: url(../img/steps-6.webp);
+      background-size: cover;
+    }
+
+    @include small-tablet {
+      &:nth-child(4) {
+        background: var(--light-grey);
+
+        svg {
+          path {
+            stroke: var(--accent);
+          }
+        }
+
+        .steps__count {
+          color: var(--accent);
+        }
+
+        .steps__subtitle {
+          color: #1e1e1e;
+        }
+      }
+
+      &:nth-child(3) {
+        background: var(--accent);
+
+        svg {
+          path {
+            stroke: #FFF;
+          }
+        }
+
+        .steps__count {
+          color: #fff;
+        }
+
+        .steps__subtitle {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: #1e1e1e;
+
+    @include small-tablet {
+      font-size: 20px;
+
+      span {
+        font-size: 0px !important;
+      }
+    }
+  }
+
+  &__count {
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 128px;
+    letter-spacing: -0.08em;
+    color: var(--accent);
+    line-height: 75%;
+
+    @include small-tablet {
+      font-size: 100px;
+    }
+  }
+}

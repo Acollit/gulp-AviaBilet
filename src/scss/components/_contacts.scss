@@ -1,0 +1,254 @@
+.contacts {
+  @include small-tablet {
+    .container {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--accent);
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__content {
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 41px;
+    padding: 30px;
+    background: var(--light-grey);
+
+    @include small-tablet {
+      flex-direction: column;
+      margin-bottom: 0px;
+      padding: 0px;
+      border-radius: 30px;
+      background-color: #FFF;
+    }
+  }
+
+  &__inner {
+    margin-left: 80px;
+    max-width: 400px;
+
+    @include small-tablet {
+      padding: 20px 12px;
+      margin-left: 0px;
+      max-width: 500px;
+      margin-bottom: 30px;
+      padding-top: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 28px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #242424;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    color: var(--accent);
+  }
+
+  &__address {
+    margin: 0;
+    margin-bottom: 36px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    color: var(--dark-grey);
+
+    @include small-tablet {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    color: var(--dark-grey);
+
+  }
+
+  &__mail {
+    display: block;
+    margin-bottom: 44px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    color: var(--dark-grey);
+
+    @include small-tablet {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__form {
+    border-radius: 41px;
+    max-width: 622px;
+    width: 100%;
+    background: #fff;
+    padding: 56px;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__form-title {
+    max-width: 462px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--black);
+
+    @include small-tablet {
+      font-size: 22px;
+    }
+  }
+
+
+
+  &__label {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    max-width: 462px;
+    width: 100%;
+  }
+
+  &__input {
+
+    outline: none;
+    max-width: 462px;
+    width: 100%;
+    background-color: inherit;
+    padding: 16px 24px;
+    border: 1px solid rgba(86, 83, 83, 0.3);
+    border-radius: 6px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(86, 83, 83, 1);
+
+    @include small-tablet {
+      font-size: 16px;
+      padding: 13px 20px;
+    }
+
+
+    &::placeholder {
+      color: rgba(86, 83, 83, 0.5);
+    }
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__btn {
+    display: block;
+    max-width: 462px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-radius: 75px;
+    padding: 16px;
+    width: 100%;
+    background: var(--accent);
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--white);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      border-radius: 25px;
+      background: #fc6e2c;
+      color: #fff;
+    }
+  }
+
+  &__checkbox {
+    max-width: 462px;
+    margin: 0 auto;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+  }
+
+  &__check {
+    border: 1px solid var(--dark-grey);
+    min-width: 20px;
+    height: 20px;
+    background-color: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:checked {
+      background-image: url(../img/check-2.svg);
+    }
+  }
+
+  &__span {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 120%;
+    color: var(--dark-grey);
+  }
+
+  &__map {
+    height: 600px;
+    width: 100%;
+
+    @include small-tablet {
+      height: 500px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+}
